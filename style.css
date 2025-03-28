@@ -1,0 +1,90 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    gap: 40px ;
+    height: 100vh;
+    background: linear-gradient(180deg, rgb(94, 148, 201), rgb(188, 188, 118));
+    margin-bottom: 20px;
+    font-family: "Pixelify Sans", sans-serif;
+    transition: background 2s ease-in-out;
+}
+  
+  #traffic{
+    height: 400px;
+    width: 200px;
+    background: linear-gradient(30deg, rgb(44, 44, 44), rgb(34, 34, 34), rgb(44, 44, 44));
+    border: 5px solid black;
+    border-radius:20px;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .light {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 5px solid black;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .red {
+    margin-top: 20px;
+    background-color: #ffacac;
+  }
+  
+  .red-active {
+    background-color: red;
+    box-shadow: 0 0 10px black, 0 0 50px red, 0 0 150px red, 0 0 300px white, 0 0 100px red, 0 0 100px white, 0 0 200px red;
+  }
+  
+  .yellow {
+    background-color: #fbfaaa;
+  }
+  
+  .yellow-active {
+    background: yellow;
+    box-shadow: 0 0 10px black, 0 0 50px yellow, 0 0 150px yellow, 0 0 300px white, 0 0 100px yellow, 0 0 100px white;
+  }
+  
+  .green {
+    margin-bottom: 20px;
+    background-color: #b3ffac;
+  }
+  
+  .green-active {
+    background-color: green;
+    box-shadow: 0 0 10px black, 0 0 50px green, 0 0 150px green, 0 0 300px white, 0 0 100px green, 0 0 100px white;
+  }
+
+  #stick {
+    background: linear-gradient(180deg, black, rgb(87, 87, 87), black);
+    height: 53%;
+    width: 20px;
+    border-radius: 20px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border: 5px solid black;
+    position: absolute;
+    top: 400px;
+    z-index: -1;
+  }
+  
+  
+  #counter {
+    display:flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    padding: 10px 0px;
+    background: linear-gradient(30deg, black, rgb(87, 87, 87), black);
+    border: 5px solid black;
+    border-radius:20px; 
+    font-size: 40px
+  }
+
